@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3542772558255852716}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.088, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -151,6 +151,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Lattice_Env_3
       objectReference: {fileID: 0}
+    - target: {fileID: 8017084647198316323, guid: 1656d845b8440f7499036e22fd8a8999, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c71c71cd3536c48428e2fc74bf8d71ff, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -225,6 +229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fence_Lattice_Env_3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8017084647198316323, guid: 1656d845b8440f7499036e22fd8a8999, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: c71c71cd3536c48428e2fc74bf8d71ff, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
