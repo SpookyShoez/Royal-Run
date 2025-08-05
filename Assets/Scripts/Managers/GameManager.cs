@@ -24,14 +24,14 @@ public class GameManager : MonoBehaviour
         DecreaseTime();
     }
 
-    public bool ReturnGameOver()
+    public void IncreaseTime(float amount)
     {
-        return gameOver;
+        timeLeft += amount;
     }
 
-    private bool DecreaseTime()
+    void DecreaseTime()
     {
-        if (gameOver) return false;
+        if (gameOver) return;
 
         timeLeft -= Time.deltaTime;
         timeText.text = timeLeft.ToString("F1");
@@ -40,8 +40,6 @@ public class GameManager : MonoBehaviour
         {
             PlayerGameOver();
         }
-
-        return true;
     }
 
     void PlayerGameOver()
