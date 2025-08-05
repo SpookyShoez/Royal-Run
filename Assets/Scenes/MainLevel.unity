@@ -5763,6 +5763,7 @@ GameObject:
   - component: {fileID: 519380106}
   - component: {fileID: 519380108}
   - component: {fileID: 519380104}
+  - component: {fileID: 519380109}
   m_Layer: 0
   m_Name: Cinemachine Camera
   m_TagString: Untagged
@@ -5930,6 +5931,23 @@ MonoBehaviour:
     FrequencyGain: 1
     Duration: 1
     m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!114 &519380109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519380101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  PivotOffset: {x: 0, y: 0, z: 0}
+  AmplitudeGain: 0.4
+  FrequencyGain: 0.1
+  m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &747002352
 GameObject:
   m_ObjectHideFlags: 0
@@ -11235,7 +11253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 31, y: -10}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1273453169
@@ -11285,8 +11303,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75
-  m_fontSizeBase: 75
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11468,7 +11486,7 @@ MonoBehaviour:
   playerController: {fileID: 747002355}
   timeText: {fileID: 1273453169}
   gameOverText: {fileID: 213567404}
-  startTime: 60
+  startTime: 30
 --- !u!1 &1646537894
 GameObject:
   m_ObjectHideFlags: 0
@@ -11510,13 +11528,13 @@ MonoBehaviour:
   chunkParent: {fileID: 386396095}
   scoreManager: {fileID: 1508938438}
   startingChunksAmount: 12
-  checkPointChunkInterval: 8
+  checkPointChunkInterval: 6
   chunkLength: 10
   moveSpeed: 8
   minMoveSpeed: 2
   maxMoveSpeed: 20
   minGravityZ: -22
-  maxGravityZ: -2
+  maxGravityZ: -8
 --- !u!4 &1646537896
 Transform:
   m_ObjectHideFlags: 0
@@ -11570,7 +11588,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 0000
+  m_text: '000
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -11597,8 +11617,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 75
-  m_fontSizeBase: 75
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11665,7 +11685,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -24, y: -10}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 1, y: 1}
 --- !u!1 &1781778704
@@ -11706,6 +11726,7 @@ MonoBehaviour:
   - {fileID: 8386560322717544180, guid: b65ff6cb606b83946b525855fd8e46ac, type: 3}
   - {fileID: 1058506436468413241, guid: 6d9ded73fe6c12c45ac56dc33b494471, type: 3}
   obstacleSpawnTime: 3
+  minObstacleSpawnTime: 0.2
   obstacleParent: {fileID: 386396095}
   spawnWidth: 4
 --- !u!4 &1781778706

@@ -1402,6 +1402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   checkPointTimeExtension: 5
+  obstacleDecreaseTimeAmount: 0.2
 --- !u!65 &2110700248530123953
 BoxCollider:
   m_ObjectHideFlags: 0
