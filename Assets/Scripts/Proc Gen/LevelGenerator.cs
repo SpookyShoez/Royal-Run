@@ -7,6 +7,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] CameraController cameraController;
     [SerializeField] GameObject chunkPrefab;
     [SerializeField] Transform chunkParent;
+    [SerializeField] ScoreManager scoreManager;
 
     [Header("Level Settings")]
     [Tooltip("The amount of chunks we start with")]
@@ -43,7 +44,7 @@ public class LevelGenerator : MonoBehaviour
             float newGravityZ = Physics.gravity.z - speedAmount;
             newGravityZ = Mathf.Clamp(newGravityZ, minGravityZ, maxGravityZ);
             Physics.gravity = new Vector3(Physics.gravity.x, Physics.gravity.y, newGravityZ);
-            
+
             cameraController.ChangeCameraFOV(speedAmount);
         }
     }
@@ -61,9 +62,11 @@ public class LevelGenerator : MonoBehaviour
         float spawnPositionZ = CalculateSpawnPositionZ();
 
         Vector3 chunkSpawnPos = new Vector3(transform.position.x, transform.position.y, spawnPositionZ);
-        GameObject newChunk = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent);
+        GameObject newChunkGO = Instantiate(chunkPrefab, chunkSpawnPos, Quaternion.identity, chunkParent);
 
-        chunks.Add(newChunk);
+        chunks.Add(newChunkGO);
+        Chunk newChunk = newChunkGO.GetComponent<Chunk>();
+        newChunk.Init(this, scoreManager);
     }
 
     float CalculateSpawnPositionZ()
