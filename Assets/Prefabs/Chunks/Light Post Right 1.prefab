@@ -50,10 +50,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2851288414941603830, guid: f35c06d78e86a734cb31e0b231b9369b, type: 3}
       propertyPath: m_Name
-      value: Light Post Left
+      value: Light Post Right 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 1857470110514543283, guid: f35c06d78e86a734cb31e0b231b9369b, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1732419128911400851, guid: f35c06d78e86a734cb31e0b231b9369b, type: 3}
       insertIndex: -1
@@ -75,7 +76,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 566194103400238707, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.87
+      value: -4.9
       objectReference: {fileID: 0}
     - target: {fileID: 566194103400238707, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -91,15 +92,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 566194103400238707, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 566194103400238707, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.70710677
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 566194103400238707, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 566194103400238707, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -116,6 +117,18 @@ PrefabInstance:
     - target: {fileID: 905318242512786633, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
       propertyPath: m_Name
       value: Light_Hanging_Pole_Furn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999376493596325598, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.38430992
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999376493596325598, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.46574515
+      objectReference: {fileID: 0}
+    - target: {fileID: 5999376493596325598, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.38430992
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -267793088845230817, guid: 9e3740eea4654ff4595607f1fa3a28c2, type: 3}
