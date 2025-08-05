@@ -76,6 +76,10 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 6968752012499563033, guid: 4a8d6d5f3ce82e244afddc5d2c95640d, type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2321400473950526787, guid: 4a8d6d5f3ce82e244afddc5d2c95640d, type: 3}
