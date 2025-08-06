@@ -1,6 +1,7 @@
 using TMPro;
-using TMPro.EditorUtilities;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -47,7 +48,23 @@ public class GameManager : MonoBehaviour
         gameOver = true;
         playerController.enabled = false;
         gameOverText.SetActive(true);
-        Time.timeScale = .1f;
+        Time.timeScale = 0.1f;
+
+        StartCoroutine(RestartAfterDelay(7f));
+    }
+
+    IEnumerator RestartAfterDelay(float delay)
+    {
+        float timer = 0f;
+
+        while (timer < delay)
+        {
+            timer += Time.unscaledDeltaTime;
+            yield return null;
+        }
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
         
