@@ -69,6 +69,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88cc075a52b1f7f42ba10f796d0c1968, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rotationSpeed: 100
+  adjustChangeMoveSpeedAmount: 3
+  appleVoiceLine: {fileID: 8300000, guid: 56024be8bab51c4489faf2965bc66a3b, type: 3}
 --- !u!1 &8522884932847567050
 GameObject:
   m_ObjectHideFlags: 0
